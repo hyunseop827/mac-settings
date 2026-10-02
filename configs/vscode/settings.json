@@ -1,0 +1,35 @@
+{
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "Monokai Pro Icons",
+
+    "editor.fontFamily": "JetBrains Mono NL",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+
+    "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
+
+    "workbench.colorCustomizations":
+    {
+        "terminal.background": "#050609",
+        "terminal.foreground": "#d7e1e8",
+        "terminalCursor.foreground": "#00f5d4",
+        "terminal.selectionBackground": "#203040",
+
+        "terminal.ansiBlack": "#050609",
+        "terminal.ansiRed": "#ff3864",
+        "terminal.ansiGreen": "#5cff8d",
+        "terminal.ansiYellow": "#ffd166",
+        "terminal.ansiBlue": "#4da3ff",
+        "terminal.ansiMagenta": "#c77dff",
+        "terminal.ansiCyan": "#00e5ff",
+        "terminal.ansiWhite": "#d7e1e8",
+
+        "terminal.ansiBrightBlack": "#48505f",
+        "terminal.ansiBrightRed": "#ff6b8a",
+        "terminal.ansiBrightGreen": "#8dffb0",
+        "terminal.ansiBrightYellow": "#ffe08a",
+        "terminal.ansiBrightBlue": "#7bbcff",
+        "terminal.ansiBrightMagenta": "#df9cff",
+        "terminal.ansiBrightCyan": "#6ffff1",
+        "terminal.ansiBrightWhite": "#ffffff"
+    }
+}

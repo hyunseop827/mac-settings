@@ -1,0 +1,2 @@
+monokai.theme-monokai-pro-vscode
+ms-ceintl.vscode-language-pack-ko

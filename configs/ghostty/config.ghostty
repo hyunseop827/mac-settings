@@ -1,0 +1,28 @@
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-family = "Apple SD Gothic Neo"
+font-size = 14
+font-thicken = true
+font-thicken-strength = 80
+
+background = #050609
+foreground = #d7e1e8
+cursor-color = #00f5d4
+selection-background = #203040
+selection-foreground = #f6fffb
+
+palette = 0=#050609
+palette = 1=#ff3864
+palette = 2=#5cff8d
+palette = 3=#ffd166
+palette = 4=#4da3ff
+palette = 5=#c77dff
+palette = 6=#00e5ff
+palette = 7=#d7e1e8
+palette = 8=#48505f
+palette = 9=#ff6b8a
+palette = 10=#8dffb0
+palette = 11=#ffe08a
+palette = 12=#7bbcff
+palette = 13=#df9cff
+palette = 14=#6ffff1
+palette = 15=#ffffff

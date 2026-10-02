@@ -1,0 +1,29 @@
+# Terminal
+brew "starship"
+
+# Fonts
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+
+# Shell helpers
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
+# CLI tools
+brew "actionlint"
+brew "awscli"
+brew "fastfetch"
+brew "gh"
+brew "git"
+brew "jenv"
+
+# Node.js
+brew "node@22", link: true
+
+# Java
+cask "corretto@21"
+cask "corretto@25"
+
+# macOS utilities
+cask "pearcleaner"
+cask "unnaturalscrollwheels"
