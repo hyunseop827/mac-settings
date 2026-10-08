@@ -15,7 +15,7 @@
    ```
 
 4. 설치 스크립트를 실행합니다.
-   Brewfile, 설정 파일, VS Code 확장, Java, 맥 설정을 한 번에 적용합니다. 기존 설정 파일은 덮어씁니다.
+   Brewfile, 설정 파일, VS Code 확장, Java, 맥 설정을 한 번에 적용합니다. 기존 설정 파일은 덮어쓰되, 내용이 다르면 `.backup-날짜` 사본을 남깁니다.
 
    ```sh
    ~/Developer/Settings/configs/install.sh
@@ -45,6 +45,8 @@
 | `agents/AGENTS.md` | 에이전트로 앱을 개발·배포할 때 쓰는 규칙 원본 |
 
 `awake`는 뚜껑을 닫아도 맥이 잠들지 않게 합니다. `awake`는 8시간, `awake 10`은 10시간 유지하고 Ctrl+C로 끝냅니다.
+
+`agents/AGENTS.md`의 규칙은 여기서 먼저 고친 뒤 세 앱(Hangeul Filename Fixer, Menu Pulse, Finder Presets)에 문서 PR로 복사합니다.
 
 ## 사진
 

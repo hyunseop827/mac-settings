@@ -16,6 +16,7 @@ brew "fastfetch"
 brew "gh"
 brew "git"
 brew "jenv"
+brew "shellcheck"
 
 # Node.js
 brew "node@22", link: true
