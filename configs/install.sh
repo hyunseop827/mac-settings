@@ -1,6 +1,6 @@
 #!/bin/zsh
 # 새 맥에서 Homebrew를 설치한 뒤 한 번 실행합니다: ./configs/install.sh
-# Brewfile 설치, 설정 파일 복사(기존 파일은 덮어씀), VS Code 확장, Java 등록, 맥 설정까지 합니다.
+# Brewfile 설치, 설정 파일 복사(내용이 다른 기존 파일은 .backup-날짜 사본을 남김), VS Code 확장, Java 등록, 맥 설정까지 합니다.
 set -e
 cd "${0:A:h}"
 
@@ -8,7 +8,15 @@ echo "==> Homebrew 패키지"
 brew bundle --file Brewfile
 
 echo "==> 설정 파일 복사"
-put() { mkdir -p "${2:h}" && cp "$1" "$2" && echo "  $2"; }
+put() {
+  mkdir -p "${2:h}"
+  if [[ -f $2 ]] && ! cmp -s "$1" "$2"; then
+    local backup
+    backup="$2.backup-$(date +%Y%m%d%H%M%S)"
+    cp "$2" "$backup" && echo "  기존 파일 보관: $backup"
+  fi
+  cp "$1" "$2" && echo "  $2"
+}
 put zsh/.zshrc "$HOME/.zshrc"
 put git/.gitconfig "$HOME/.gitconfig"
 put vim/.vimrc "$HOME/.vimrc"
@@ -28,6 +36,8 @@ else
 fi
 
 echo "==> Java (jenv)"
+# enable-plugin은 jenv init이 만드는 셸 함수가 있어야 동작합니다 (실행 파일은 jenv-sh-enable-plugin만 있음).
+eval "$(jenv init -)"
 mkdir -p "$HOME/.jenv/versions"
 for v in 21 25; do
   jenv add "/Library/Java/JavaVirtualMachines/amazon-corretto-$v.jdk/Contents/Home" >/dev/null || true
